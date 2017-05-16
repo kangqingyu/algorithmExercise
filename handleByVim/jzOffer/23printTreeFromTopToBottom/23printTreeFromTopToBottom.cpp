@@ -38,7 +38,6 @@ void levelOutPutTree(BitTreeNode *root) {
     if (tempNode -> rChild) rootStack.push(tempNode -> rChild);
     }
 }
-    
 int main(int argc, const char *argv[]) {
     BitTreeNode *root = createTree(root);
     displayTree(root);
