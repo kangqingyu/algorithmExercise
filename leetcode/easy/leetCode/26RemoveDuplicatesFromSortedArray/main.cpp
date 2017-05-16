@@ -12,10 +12,11 @@ using namespace std;
 class solution{
 public:
     int removeDuplicates_002(int *nums, int numsSize) {
+        if (numsSize == 0) {
+            return 0;   // 我这种方法是不是比较麻烦？答案上好像没这么一步。
+        }
         int lastIndex = 0;
         for (int i = 1; i < numsSize; ++i) {
-//            int x = nums[i];
-//            int y = nums[lastIndex];
             if (nums[i] != nums[lastIndex]) {
                 nums[++lastIndex] = nums[i];
             }
@@ -36,8 +37,10 @@ public:
         return lastIndex + 1;
     }
     int removeDuplicates2_001(vector<int> nums) {
+        if (nums.size() == 0) {
+            return 0;   // 我这种方法是不是比较麻烦？答案上好像没这么一步。
+        }
         int lastIndex = 0;
-        nums[lastIndex] = nums[0];
         for (int i = 0; i < nums.size(); ++i) {
             if (nums[i] != nums[lastIndex]) {
                 nums[++lastIndex] = nums[i];
@@ -54,17 +57,25 @@ int main(int argc, const char * argv[]) {
     int array4[4] = {2, 2, 2, 3};
     int array5[4] = {1, 2, 3, 4};
     int array6[0];
-//    cout << c1.removeDuplicates_002(array1, 10 ) << endl;
-//    cout << c1.removeDuplicates_002(array2, 8 ) << endl;
-//    cout << c1.removeDuplicates_002(array3, 3 ) << endl;
+    cout << c1.removeDuplicates_002(array1, 10 ) << endl;
+    cout << c1.removeDuplicates_002(array2, 8 ) << endl;
+    cout << c1.removeDuplicates_002(array3, 3 ) << endl;
     cout << c1.removeDuplicates_002(array4, 4 ) << endl;
-    cout << c1.removeDuplicates2_001(array4, 4 ) << endl;
-
     cout << c1.removeDuplicates_002(array5, 4 ) << endl;
-    cout << c1.removeDuplicates2_001(array5, 4 ) << endl;
-
     cout << c1.removeDuplicates_002(array6, 0 ) << endl;
-    cout << c1.removeDuplicates2_001(array6, 0 ) << endl;
-
+    cout << "vector: "<< endl;
+    vector<int> nums1 ={2, 2, 9, 9, 9, 18, 25, 25, 29, 29};
+    vector<int> nums2 = {2, 2, 3, 4, 5, 6, 8, 8};
+    vector<int> nums3 = {2, 2, 3};
+    vector<int> nums4 ={2, 2, 2, 4};
+    vector<int> nums5 = {1, 2, 3, 4};
+    vector<int> nums6 ;
+    
+    cout << c1.removeDuplicates2_001(nums1 ) << endl;
+    cout << c1.removeDuplicates2_001(nums2 ) << endl;
+    cout << c1.removeDuplicates2_001(nums3 ) << endl;
+    cout << c1.removeDuplicates2_001(nums4 ) << endl;
+    cout << c1.removeDuplicates2_001(nums5 ) << endl;
+    cout << c1.removeDuplicates2_001(nums6 ) << endl;
     return 0;
 }

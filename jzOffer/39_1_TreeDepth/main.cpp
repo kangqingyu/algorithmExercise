@@ -48,6 +48,20 @@ BitTreeNode * createTree02() {
     return root2;
 }
 int deepOfTree(BitTreeNode *root) {
+    if (root == NULL) {
+        return 0;
+    }
+    int left = deepOfTree(root -> lChild) + 1;
+    int right = deepOfTree(root -> rChild) + 1;
+    return left > right ? left : right;
+}
+int main(int argc, const char * argv[]) {
+    BitTreeNode * t1 = createTree01();
+    cout << deepOfTree(t1) << endl;
+    return 0;
+}
+
+int deepOfTree0508(BitTreeNode *root) {
     if (!root) {
         return 0;
     }
@@ -55,8 +69,4 @@ int deepOfTree(BitTreeNode *root) {
     int right = deepOfTree(root -> rChild);
     return left > right ? (left + 1) : (right + 1);
 }
-int main(int argc, const char * argv[]) {
-    BitTreeNode * t1 = createTree01();
-    cout << deepOfTree(t1);
-    return 0;
-}
+
