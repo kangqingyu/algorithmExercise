@@ -13,7 +13,7 @@ class solution{
 public:
     int removeDuplicates_002(int *nums, int numsSize) {
         if (numsSize == 0) {
-            return 0;   // 我这种方法是不是比较麻烦？答案上好像没这么一步。
+            return 0;
         }
         int lastIndex = 0;
         for (int i = 1; i < numsSize; ++i) {
@@ -38,7 +38,7 @@ public:
     }
     int removeDuplicates2_001(vector<int> nums) {
         if (nums.size() == 0) {
-            return 0;   // 我这种方法是不是比较麻烦？答案上好像没这么一步。
+            return 0;
         }
         int lastIndex = 0;
         for (int i = 0; i < nums.size(); ++i) {
