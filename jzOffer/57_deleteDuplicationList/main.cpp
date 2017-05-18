@@ -45,6 +45,24 @@ void displayList(LNode *pHead, int length) {
     std::cout<< std::endl;
 }
 void deleteDuplication(LNode **pHead) {
+    LNode *frontP = *pHead;
+    frontP = frontP -> next;
+    LNode *backP = *pHead;
+    while (frontP) {
+        while (frontP -> value == backP -> value) {
+            frontP = frontP -> next;   q
+        }
+    }
+}
+int main(int argc, const char * argv[]) {
+    LNode *p1 = new LNode();
+    createListAuto(&p1, 9);
+    displayList(p1, 9);
+    deleteDuplication(&p1);
+    displayList(p1, 9);
+    return 0;
+}
+void deleteDuplication0510(LNode **pHead) {
     LNode *preP = *pHead;
     LNode *currentP = *pHead ;
     LNode *nextP;
@@ -67,11 +85,4 @@ void deleteDuplication(LNode **pHead) {
         currentP = nextP;
     }
 }
-int main(int argc, const char * argv[]) {
-    LNode *p1 = new LNode();
-    createListAuto(&p1, 9);
-    displayList(p1, 9);
-    deleteDuplication(&p1);
-    displayList(p1, 9);
-    return 0;
-}
+
