@@ -54,7 +54,50 @@ void displayList(LNode *pHead, int length) {
     }
     std::cout<< std::endl;
 }
-LNode *meetNode (LNode *pHead) {
+LNode *meetLNode(LNode *pHead) {
+    LNode *slowP = pHead;
+    LNode *fastP = slowP -> next;
+    if (!pHead || !fastP) {
+        return NULL;
+    }
+    while (fastP != slowP) {
+        fastP = fastP -> next;
+        slowP = slowP -> next;
+        fastP = fastP -> next;
+        if (fastP == NULL || slowP == NULL) {
+            return NULL;
+        }
+        
+    }
+    
+    return fastP;
+}
+LNode * entranceP(LNode *meetP) {
+    int count = 1;
+    LNode *slowP = meetP;
+    LNode *fastP = slowP -> next;
+    while (slowP != fastP) {
+        fastP = fastP -> next -> next;
+        slowP = slowP -> next;
+        ++count;
+    }
+    
+}
+int main(int argc, const char * argv[]) {
+    ListNode * p1 = new ListNode();
+    p1 -> value = 3;
+    createCircleList(&p1, 5);
+    displayList(p1, 10);
+    // 0517
+    LNode *entrance = entranceP(p1);
+    cout << entrance -> value << endl;
+    //test 0510
+    //    cout << endl <<  lengOfCircleList(p1) << endl;
+    //    LNode *entrance = entranceList(p1);
+    //    cout << entrance -> value << endl;
+    return 0;
+}
+LNode *meetNode0517 (LNode *pHead) {
     if (!pHead) return nullptr;
     LNode *fastP = pHead -> next ;
     LNode *slowP = pHead ;
@@ -64,7 +107,7 @@ LNode *meetNode (LNode *pHead) {
     }
     return fastP;//返回相见的点
 }
-LNode *entranceP (LNode *meetP) {
+LNode *entranceP0517 (LNode *meetP) {
     int count = 0;
     LNode *fastP = meetP;
     LNode *slowP = meetP;
@@ -83,20 +126,7 @@ LNode *entranceP (LNode *meetP) {
     }
     return fastP;
 }
-int main(int argc, const char * argv[]) {
-    ListNode * p1 = new ListNode();
-    p1 -> value = 3;
-    createCircleList(&p1, 5);
-    displayList(p1, 10);
-    // 0517
-   LNode *entrance = entranceP(p1);
-    cout << entrance -> value << endl;
-    //test 0510
-//    cout << endl <<  lengOfCircleList(p1) << endl;
-//    LNode *entrance = entranceList(p1);
-//    cout << entrance -> value << endl;
-    return 0;
-}
+
 int lengOfCircleList0510(LNode *pHead) {
     LNode *pFast = pHead -> next -> next;
     LNode *pSlow = pHead;
