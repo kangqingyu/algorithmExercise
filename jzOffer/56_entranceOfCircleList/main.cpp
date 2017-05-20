@@ -27,7 +27,7 @@ void createCircleList(LNode **pHead, int length) {
     p = *pHead;
     for (int i = 0; i < length; ++ i ) {
         LNode *newNode = new LNode();
-        newNode ->value =  (i+1) * 3;
+        newNode ->value =  (i+1) * 4;
         newNode -> next = NULL;
         p -> next  = newNode;
         p = newNode;
@@ -54,7 +54,21 @@ void displayList(LNode *pHead, int length) {
     }
     std::cout<< std::endl;
 }
-LNode *meetLNode(LNode *pHead) {
+int main(int argc, const char * argv[]) {
+    ListNode * p1 = new ListNode();
+    p1 -> value = 3;
+    createCircleList(&p1, 5);
+    displayList(p1, 10);
+    // 0517
+    LNode *entrance = entranceP(p1);
+    cout << entrance -> value << endl;
+    //test 0510
+    //    cout << endl <<  lengOfCircleList(p1) << endl;
+    //    LNode *entrance = entranceList(p1);
+    //    cout << entrance -> value << endl;
+    return 0;
+}
+LNode *meetLNode0519(LNode *pHead) {
     LNode *slowP = pHead;
     LNode *fastP = slowP -> next;
     if (!pHead || !fastP) {
@@ -72,31 +86,27 @@ LNode *meetLNode(LNode *pHead) {
     
     return fastP;
 }
-LNode * entranceP(LNode *meetP) {
+LNode * entranceP0519(LNode *pHead) {
     int count = 1;
-    LNode *slowP = meetP;
+    LNode *slowP = meetLNode0519(pHead);
     LNode *fastP = slowP -> next;
     while (slowP != fastP) {
         fastP = fastP -> next -> next;
         slowP = slowP -> next;
         ++count;
     }
-    
+    fastP = pHead;
+    slowP = pHead;
+    for (int i = 0; i < count; ++i) {
+        fastP = fastP -> next;
+    }
+    while (fastP != slowP) {
+        fastP = fastP -> next;
+        slowP = slowP -> next;
+    }
+    return fastP;
 }
-int main(int argc, const char * argv[]) {
-    ListNode * p1 = new ListNode();
-    p1 -> value = 3;
-    createCircleList(&p1, 5);
-    displayList(p1, 10);
-    // 0517
-    LNode *entrance = entranceP(p1);
-    cout << entrance -> value << endl;
-    //test 0510
-    //    cout << endl <<  lengOfCircleList(p1) << endl;
-    //    LNode *entrance = entranceList(p1);
-    //    cout << entrance -> value << endl;
-    return 0;
-}
+
 LNode *meetNode0517 (LNode *pHead) {
     if (!pHead) return nullptr;
     LNode *fastP = pHead -> next ;
