@@ -68,6 +68,45 @@ int main(int argc, const char * argv[]) {
     //    cout << entrance -> value << endl;
     return 0;
 }
+LNode *meetNode0524(LNode *pHead) {
+    LNode *slowP = pHead;
+    LNode *fastP = slowP -> next;
+    if (!slowP || !fastP) {
+        return nullptr;
+    }
+    fastP = fastP -> next;
+    while (fastP) {
+        fastP = fastP -> next;
+        if (!fastP) {
+            return NULL;
+        }
+        slowP = slowP -> next;
+        fastP = fastP -> next;
+        if (slowP == fastP) {
+            return slowP;
+        }
+    }
+    return NULL;
+}
+LNode *entranceP0524(LNode *pHead) {
+    LNode *meetP = meetNode0524(pHead);
+    int count = 1;
+    LNode *pCount = meetP -> next;
+    LNode *pFront = pHead -> next;
+    LNode *pBack = pHead;
+    while (pCount != meetP) {
+        ++count;
+        pCount = pCount -> next;
+        pFront = pFront -> next;
+    }
+    
+    while (pFront != pBack) {
+        pFront = pFront -> next;
+        pBack = pBack -> next;
+    }
+    return pBack;
+}
+
 LNode *meetLNode0519(LNode *pHead) {
     LNode *slowP = pHead;
     LNode *fastP = slowP -> next;
