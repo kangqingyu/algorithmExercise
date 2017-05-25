@@ -20,3 +20,4 @@ int main() {
     cout << moreThanHalfNumber(nums2, 9) << endl;
     return 0;
 }
+
