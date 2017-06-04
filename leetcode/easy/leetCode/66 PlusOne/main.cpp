@@ -109,6 +109,4 @@ int main(int argc, const char * argv[]) {
         cout << nums2[i] << "  ";
     }
     return 0;
-}
-
-.kid
+} 
