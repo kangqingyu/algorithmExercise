@@ -10,7 +10,9 @@
 using namespace std;
 class solution {
 public:
-    int reverse(int x) {
+    int reverse02(int x) {
+    }
+    int reverse01(int x) {
         int summer = 0;
         int multi = 1;
         int temp, flag;
@@ -21,14 +23,20 @@ public:
             flag = 0;
         } else return 0;
         while (x) {
-            temp = x % 10;
-            summer += temp * multi;
-            multi *= 10;
+            summer = summer * 10 + x % 10;
             x /= 10;
         }
         if (flag) return summer;
          else return -summer;
     }
+    /*
+     Input:
+     1534236469
+     Output:
+     1056389759
+     Expected:
+     0
+     */
 };
 int main(int argc, const char * argv[]) {
     solution s1 = * new  solution();
