@@ -45,7 +45,7 @@ int main(int argc, const char * argv[]) {
     cout << x << endl;
     x = x << 1;
     cout << x << endl;
-    for (int i = 0; i < 30; ++i) {
+    for (int i = 0; i < 29; ++i) {
         x = x << 1;
     }
     cout << x << endl ;
