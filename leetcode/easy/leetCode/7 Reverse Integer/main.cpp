@@ -11,6 +11,7 @@ using namespace std;
 class solution {
 public:
     int reverse02(int x) {
+        return 0;
     }
     int reverse01(int x) {
         int summer = 0;
@@ -40,11 +41,23 @@ public:
 };
 int main(int argc, const char * argv[]) {
     solution s1 = * new  solution();
-    cout << s1.reverse(5) << endl;
-    cout << s1.reverse(15) << endl;
-    cout << s1.reverse(135) << endl;
-    cout << s1.reverse(-5) << endl;
-    cout << s1.reverse(-135) << endl;
+    int x = 1;
+    cout << x << endl;
+    x = x << 1;
+    cout << x << endl;
+    for (int i = 0; i < 30; ++i) {
+        x = x << 1;
+    }
+    cout << x << endl ;
+    x = x << 1;
+    cout << x << endl;
+    x = x << 1;
+    cout << x << endl;
+//    cout << s1.reverse(5) << endl;
+//    cout << s1.reverse(15) << endl;
+//    cout << s1.reverse(135) << endl;
+//    cout << s1.reverse(-5) << endl;
+//    cout << s1.reverse(-135) << endl;
 
     return 0;
 }
