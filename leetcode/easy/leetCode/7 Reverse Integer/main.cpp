@@ -43,15 +43,17 @@ int main(int argc, const char * argv[]) {
     solution s1 = * new  solution();
     int x = 1;
     cout << x << endl;
-    x = x << 1;
-    cout << x << endl;
     for (int i = 0; i < 29; ++i) {
         x = x << 1;
     }
     cout << x << endl ;
-    x = x << 1;
+    x = (x << 1) - 1;
     cout << x << endl;
-    x = x << 1;
+    x = x + 1;
+    cout << x << endl;
+    x = (x << 1) - 1;
+    cout << x << endl;
+    x = x + 1;
     cout << x << endl;
 //    cout << s1.reverse(5) << endl;
 //    cout << s1.reverse(15) << endl;
