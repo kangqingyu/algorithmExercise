@@ -11,8 +11,22 @@ using namespace std;
 class solution {
 public:
     int reverse02(int x) {
-        return 0;
+        int summer = 0;
+        bool positive = x > 0 ? true : false;
+        if (!positive) {
+            x = -x;
+        }
+        for ( ; x ; x /= 10) {
+            summer = summer * 10 + x % 10;
+        }
+        
+        bool flag = x > 0 ? false : true ;
+        if (x > 2147483647 || (flag && x > 2147483648)) {
+            return 0;
+        } else if (positive) return summer;
+        else return - summer;
     }
+    // 2147...47 和214....48 不一样。
     int reverse01(int x) {
         int summer = 0;
         int multi = 1;
@@ -55,11 +69,11 @@ int main(int argc, const char * argv[]) {
     cout << x << endl;
     x = x + 1;
     cout << x << endl;
-//    cout << s1.reverse(5) << endl;
-//    cout << s1.reverse(15) << endl;
-//    cout << s1.reverse(135) << endl;
-//    cout << s1.reverse(-5) << endl;
-//    cout << s1.reverse(-135) << endl;
+    cout << s1.reverse02(5) << endl;
+    cout << s1.reverse02(15) << endl;
+    cout << s1.reverse02(135) << endl;
+    cout << s1.reverse02(-5) << endl;
+    cout << s1.reverse02(-135) << endl;
 
     return 0;
 }
