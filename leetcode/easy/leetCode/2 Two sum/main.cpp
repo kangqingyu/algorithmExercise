@@ -7,7 +7,8 @@
 //
 
 #include <iostream>
-class solution {
+clas
+s solution {
     
 };
 int main(int argc, const char * argv[]) {
