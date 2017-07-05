@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>1 Two Sum.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>1.Two sum 1.Two sum 1 Two Sum.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>118 Pascal's Triangle.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -73,6 +83,16 @@
 			<true/>
 		</dict>
 		<key>68978A601ED2FEB2001248CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68E152B21EFF4DE100AFB319</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68E152BD1EFF4DF900AFB319</key>
 		<dict>
 			<key>primary</key>
 			<true/>
