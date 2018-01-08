@@ -1,4 +1,3 @@
-d
 hg
 h
 ## blog:
