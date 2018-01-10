@@ -1,4 +1,3 @@
-hg
 cv
 h
 ## blog:
