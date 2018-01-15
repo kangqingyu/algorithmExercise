@@ -1,4 +1,6 @@
-ngb
+no
+bj
+gb
 nb
 bnm
 h
