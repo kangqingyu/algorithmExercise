@@ -1,4 +1,3 @@
-bj
 gb
 nb
 bnm
