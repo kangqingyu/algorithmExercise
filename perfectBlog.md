@@ -1,4 +1,3 @@
-nb
 bnm
 h
 ## blog:
