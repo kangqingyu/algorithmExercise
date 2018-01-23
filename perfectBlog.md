@@ -1,4 +1,3 @@
-:wq
 :odsaf
 jdsfh
 ## blog:
