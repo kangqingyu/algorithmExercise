@@ -6,5 +6,3 @@ olk
 ij
 ijkl
 
-ij
-
