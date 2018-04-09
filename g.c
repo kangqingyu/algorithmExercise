@@ -14,11 +14,5 @@ ij
 
 ijkl
 
-ij
-
-ilk
-
-
-dd
 id
 
