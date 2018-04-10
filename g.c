@@ -14,5 +14,3 @@ ij
 
 ijkl
 
-id
-
