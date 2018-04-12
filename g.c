@@ -10,5 +10,4 @@ ijd
 
 ij
 
-ij
 ijkl
