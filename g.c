@@ -7,7 +7,4 @@ ij
 ijkl
 
 ijd
-
-ij
-
 ijkl
