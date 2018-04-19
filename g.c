@@ -2,5 +2,3 @@
 i
 
 k
-olk
-ij
