@@ -6,5 +6,3 @@ q
 id
 ldj
 wq
-ga .
-
