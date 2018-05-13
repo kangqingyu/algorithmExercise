@@ -1,5 +1,3 @@
 ajdke
 
 i
-idjkok
-ij
