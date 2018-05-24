@@ -8,6 +8,4 @@ o
 k
 h
 oi
-lk
-lk
 i
