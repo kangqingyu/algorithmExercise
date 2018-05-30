@@ -13,7 +13,7 @@ oi
 tt
 l
 kki
-qi
 
 i
 
+q
