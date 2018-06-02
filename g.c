@@ -14,6 +14,8 @@ tt
 l
 kki
 
+ik
+
 i
 
 q
