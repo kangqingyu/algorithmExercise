@@ -1,5 +1,3 @@
-ajdke
-
 e
 i
 i
