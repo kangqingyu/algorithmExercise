@@ -1,5 +1,3 @@
-o
-k
 l.
 ddh
 i
