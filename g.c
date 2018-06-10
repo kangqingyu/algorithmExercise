@@ -1,5 +1,3 @@
-i
-oi
 tt
 l
 kki
