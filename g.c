@@ -1,5 +1,3 @@
-l.
-ddh
 i
 oi
 tt
