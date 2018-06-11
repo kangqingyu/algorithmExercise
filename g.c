@@ -1,5 +1,3 @@
-tt
-l
 kki
 
 ik
