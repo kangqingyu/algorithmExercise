@@ -1,5 +1,3 @@
-kki
-
 ik
 ik
 ike
