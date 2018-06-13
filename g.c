@@ -1,5 +1,3 @@
-ik
-ik
 ike
 ii
 
