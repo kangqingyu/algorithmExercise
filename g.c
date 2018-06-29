@@ -1,4 +1,3 @@
-ih
 ik
 ih
 i
