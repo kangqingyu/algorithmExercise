@@ -1,4 +1,6 @@
 
+i
+i
 move to imac
 ilik
 ih
