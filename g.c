@@ -1,5 +1,3 @@
-i
-iqew
 ilik
 ih
 i
