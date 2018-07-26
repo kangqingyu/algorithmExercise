@@ -1,4 +1,3 @@
-ilik
 ih
 i
 ie
