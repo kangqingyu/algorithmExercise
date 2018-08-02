@@ -1,8 +1,6 @@
-ih
-ie
-ijjj
 ie
 k
 q
+ine
 iaskf
 
