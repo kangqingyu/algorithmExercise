@@ -1,4 +1,3 @@
-uyikj
 k
 q
 ine
