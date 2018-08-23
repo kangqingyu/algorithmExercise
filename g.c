@@ -1,4 +1,3 @@
-i
 ij
 i
 ijk
