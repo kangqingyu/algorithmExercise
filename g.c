@@ -1,4 +1,3 @@
-ijk
 ie
 i
 ie
