@@ -1,5 +1,3 @@
-
-d
 ie
 ihen
 q
