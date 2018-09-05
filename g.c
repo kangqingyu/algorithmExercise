@@ -1,4 +1,3 @@
-i
 q
 ine
 iaskf
