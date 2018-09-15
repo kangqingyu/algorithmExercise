@@ -1,7 +1,6 @@
-ie
+oie
 ieil
 
-ilw:wq
 
 ie
 ij
