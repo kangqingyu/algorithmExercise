@@ -23,7 +23,7 @@ elif len(sys.argv) == 2:
 else:
     print "the number of optional argument is wrong, must be 0 or 1!"
 
-fileType = ['.txt','.html','.md','.py']
+fileType = ['.txt','.html','.md','.cpp', '.c', '.m']
 print 'the program will make %s commits today!' %(commitNum)
 for i in range(commitNum):
     typeNum = np.random.randint(0,4)
